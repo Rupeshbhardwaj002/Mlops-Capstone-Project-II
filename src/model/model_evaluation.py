@@ -143,11 +143,10 @@ def main():
 
             # --- FIX STARTS HERE ---
             # Explicitly log the model and store its exact URI
-            # Using `name` is preferred in newer MLflow versions
             logging.info("Logging model to MLflow...")
             logged_model = mlflow.sklearn.log_model(
                 sk_model=clf,
-                name="model"
+                artifact_path="model"
             )
 
             logging.info(f"Model logged at: {logged_model.model_uri}")
@@ -167,6 +166,7 @@ def main():
         except Exception as e:
             logging.error('Failed to complete the model evaluation process: %s', e)
             print(f"Error: {e}")
+            raise
 
 
 if __name__ == '__main__':
