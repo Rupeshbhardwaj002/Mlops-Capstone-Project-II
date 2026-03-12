@@ -14,18 +14,17 @@ class TestModelLoading(unittest.TestCase):
         # Set up DagsHub credentials for MLflow tracking
         dagshub_token = os.getenv("CAPSTONE_TEST")
         if not dagshub_token:
-            raise EnvironmentError("CAPSTONE_TEST environment variable is not set")
+           raise EnvironmentError("CAPSTONE_TEST environment variable is not set")
 
         os.environ["MLFLOW_TRACKING_USERNAME"] = dagshub_token
         os.environ["MLFLOW_TRACKING_PASSWORD"] = dagshub_token
 
         dagshub_url = "https://dagshub.com"
-        repo_owner = "vikashdas770"
-        repo_name = "YT-Capstone-Project"
+        repo_owner = "Rupeshbhardwaj002"
+        repo_name = "Mlops-Capstone-Project-II"
 
         # Set up MLflow tracking URI
         mlflow.set_tracking_uri(f'{dagshub_url}/{repo_owner}/{repo_name}.mlflow')
-
         # Load the new model from MLflow model registry
         cls.new_model_name = "my_model"
         cls.new_model_version = cls.get_latest_model_version(cls.new_model_name)
