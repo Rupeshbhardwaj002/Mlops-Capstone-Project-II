@@ -41,8 +41,8 @@ print("Waiting for DagsHub connection to stabilize...")
 time.sleep(5)
 
 # Then do the init
-mlflow.set_tracking_uri('https://dagshub.com/Rupeshbhardwaj002/Mlops-Capstone-Project-II.mlflow')
-dagshub.init(repo_owner='Rupeshbhardwaj002', repo_name='Mlops-Capstone-Project-II', mlflow=True)
+# mlflow.set_tracking_uri('https://dagshub.com/Rupeshbhardwaj002/Mlops-Capstone-Project-II.mlflow')
+# dagshub.init(repo_owner='Rupeshbhardwaj002', repo_name='Mlops-Capstone-Project-II', mlflow=True)
 # -------------------------------------------------------------------------------------
 
 
