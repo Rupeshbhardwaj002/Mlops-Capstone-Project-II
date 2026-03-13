@@ -18,14 +18,14 @@ def promote_model():
     dagshub_url = "https://dagshub.com"
     repo_owner = "Rupeshbhardwaj002"
     repo_name = "Mlops-Capstone-Project-II"
-
+    
     tracking_uri = f"{dagshub_url}/{repo_owner}/{repo_name}.mlflow"
     mlflow.set_tracking_uri(tracking_uri)
 
     client = MlflowClient()
 
     # Must match the name used in register_model.py
-    model_name = "Mlops-Capstone-Project-II-model"
+    model_name = "my_model"
     alias_name = "production"
 
     try:
