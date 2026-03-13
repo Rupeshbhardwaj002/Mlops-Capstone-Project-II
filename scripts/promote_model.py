@@ -7,7 +7,7 @@ from mlflow import MlflowClient
 
 
 def promote_model():
-    # Set up DagsHub credentials for MLflow tracking
+    # Set up DagsHub credentials for MLflow trackig
     dagshub_token = os.getenv("CAPSTONE_TEST")
     if not dagshub_token:
         raise EnvironmentError("CAPSTONE_TEST environment variable is not set")
