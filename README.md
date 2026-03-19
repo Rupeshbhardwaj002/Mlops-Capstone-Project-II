@@ -85,19 +85,19 @@ graph TD
 
 ```text
 Mlops-Capstone-Project-II/
-âââ .github/workflows/      # GitHub Actions CI/CD pipelines (main.yml)
-âââ cloudformation/         # AWS CloudFormation templates for IaC
-âââ data/                   # Raw and processed data (Tracked by DVC)
-âââ k8s/                    # Kubernetes manifests (deployment, service, ingress)
-âââ monitoring/             # Prometheus & Grafana configuration files
-âââ src/                    # Source code for the ML application
-â   âââ data_ingestion.py   # Data loading and preprocessing
-â   âââ train.py            # Model training and MLflow logging
-â   âââ app.py              # FastAPI/Flask inference API
-âââ Dockerfile              # Instructions to build the Docker image
-âââ dvc.yaml                # DVC pipeline definition
-âââ requirements.txt        # Python dependencies
-âââ README.md               # Project documentation
+├── .github/workflows/      # GitHub Actions CI/CD pipelines (main.yml)
+├── cloudformation/         # AWS CloudFormation templates for IaC
+├── data/                   # Raw and processed data (Tracked by DVC)
+├── k8s/                    # Kubernetes manifests (deployment, service, ingress)
+├── monitoring/             # Prometheus & Grafana configuration files
+├── src/                    # Source code for the ML application
+│   ├── data_ingestion.py   # Data loading and preprocessing
+│   ├── train.py            # Model training and MLflow logging
+│   └── app.py              # FastAPI/Flask inference API
+├── Dockerfile              # Instructions to build the Docker image
+├── dvc.yaml                # DVC pipeline definition
+├── requirements.txt        # Python dependencies
+└── README.md               # Project documentation
 ```
 
 ---
